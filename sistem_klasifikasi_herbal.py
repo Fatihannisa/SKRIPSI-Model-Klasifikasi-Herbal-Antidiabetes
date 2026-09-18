@@ -59,7 +59,7 @@ CONFIG = {
     "TARGET_BRIGHTNESS": 110,
     "CLAHE_CLIP": 4.0,
     "CLAHE_TILE": (4, 4),
-    "VEIN_STRENGTH": 0.4
+    "VEIN_STRENGTH": 1.2
 }
 
 # =========================================================
@@ -721,10 +721,10 @@ elif st.session_state.page == "result":
             nama_umum_list = "".join([f"<li>{n}</li>" for n in data["nama_umum"]])
             st.markdown(f"""
                 <div class="custom-card">
-                    <span style="font-size:13px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Ilmiah:</span>
+                    <span style="font-size:17px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Ilmiah:</span>
                     <div class="scientific-name">{pred_name}</div>
-                    <span style="font-size:13px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Umum:</span>
-                    <ul style="font-size:16px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
+                    <span style="font-size:17px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Umum:</span>
+                    <ul style="font-size:25px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
                         {nama_umum_list}
                     </ul>
                 </div>
