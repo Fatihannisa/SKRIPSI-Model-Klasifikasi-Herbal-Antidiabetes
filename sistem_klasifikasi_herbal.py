@@ -623,7 +623,7 @@ if st.session_state.page == "upload":
             <h1 style="font-family:'Playfair Display', serif; font-size: 34px; font-weight: 700; margin-top: 2px; margin-bottom: 12px; color: #f0fdf4;">
                 Sistem Identifikasi Daun Herbal Antidiabetes
             </h1>
-            <p style="font-size: 16px; line-height: 1.7; color: #e2e8f0; margin: 0; max-width: 900px;">
+            <p style="font-size: 18px; line-height: 1.7; color: #e2e8f0; margin: 0; max-width: 900px;">
                 DiaHerb dikembangkan untuk membantu mengidentifikasi spesies tanaman herbal antidiabetes berdasarkan citra daun. 
                 Dengan bantuan kecerdasan buatan berbasis <i>Deep Learning</i>, sistem menggunakan model <b>Dual-Branch</b> untuk menganalisis karakteristik tulang daun melalui model <i>LeafNet</i> serta karakteristik visual daun melalui model <i>DenseNet201</i>. 
                 Hasil analisis kedua karakteristik tersebut kemudian digunakan untuk menentukan spesies tanaman yang paling sesuai.
@@ -636,7 +636,7 @@ if st.session_state.page == "upload":
     with col1:
         st.subheader("📷 Unggah Citra Daun")
         uploaded_file = st.file_uploader(
-            "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB",
+            <style="font-size: 16px"> "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB",
             type=["jpg", "jpeg", "png", "webp"],
             help="Maksimal ukuran file 6 MB."
         )
@@ -670,7 +670,7 @@ if st.session_state.page == "upload":
         st.markdown(f"""
             <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);">
                 <h4 style="margin-top:0; color:#0f172a; font-size:17px; font-weight:700;">📌 Tips Pengambilan Gambar</h4>
-                <ul style="font-size:15px; color:#334155; padding-left:20px; line-height:1.8;">
+                <ul style="font-size:16px; color:#334155; padding-left:20px; line-height:1.8;">
                     <li>Foto <b>1 helai daun</b> saja.</li>
                     <li>Pastikan helai daun berada tepat di tengah frame kamera.</li>
                     <li>Pencahayaan terang agar struktur urat/venasi daun terlihat jelas.</li>
