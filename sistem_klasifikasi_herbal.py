@@ -652,7 +652,7 @@ if st.session_state.page == "upload":
                 st.session_state.page = "result"
                 st.rerun()
             else:
-                st.warning("Silakan pilih atau unggah gambar daun terlebih dahulu.")
+                st.warning("Silakan unggah gambar daun terlebih dahulu.")
 
     with col2:
         sample_paths = [
@@ -713,7 +713,7 @@ elif st.session_state.page == "result":
                 <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: center; width: 100%; min-height: 320px;">
                     <img src="data:image/png;base64,{img_b64}" style="max-height: 290px; max-width: 100%; object-fit: contain; border-radius: 8px; margin: 0 auto; display: block;">
                 </div>
-                <p style="font-size: 14px; color: #64748b; font-style: italic; margin-top: 14px; margin-bottom: 0; font-weight: 500;">Gambar yang Diunggah</p>
+                <p style="font-size: 15px; color: #64748b; font-style: italic; margin-top: 14px; margin-bottom: 0; font-weight: 500;">Gambar yang Diunggah</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -721,10 +721,10 @@ elif st.session_state.page == "result":
             nama_umum_list = "".join([f"<li>{n}</li>" for n in data["nama_umum"]])
             st.markdown(f"""
                 <div class="custom-card">
-                    <span style="font-size:17px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Ilmiah:</span>
+                    <span style="font-size:16px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Ilmiah:</span>
                     <div class="scientific-name">{pred_name}</div>
-                    <span style="font-size:17px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Umum:</span>
-                    <ul style="font-size:25px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
+                    <span style="font-size:16px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Umum:</span>
+                    <ul style="font-size:22px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
                         {nama_umum_list}
                     </ul>
                 </div>
@@ -742,12 +742,12 @@ elif st.session_state.page == "result":
         st.markdown(f"""
             <div class="custom-card">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-                    <span style="font-size:14px; font-weight:700; color:#64748b;">STATUS TANAMAN:</span>
+                    <span style="font-size:16px; font-weight:700; color:#64748b;">STATUS TANAMAN:</span>
                     <span class="{status_class}">{status_text}</span>
                 </div>
                 <hr style="border-top:1px solid #f1f5f9; margin:12px 0;">
                 <div style="display:flex; justify-content:space-between; align-items:baseline;">
-                    <span style="font-size:15px; font-weight:600; color:#334155;">Kepercayaan Sistem:</span>
+                    <span style="font-size:16px; font-weight:600; color:#334155;">Kepercayaan Sistem:</span>
                     <span style="font-size:28px; font-weight:800; color:#047857; font-family:monospace;">{conf * 100:.2f}%</span>
                 </div>
             </div>
