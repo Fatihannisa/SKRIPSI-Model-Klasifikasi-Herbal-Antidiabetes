@@ -636,7 +636,7 @@ if st.session_state.page == "upload":
     with col1:
         st.subheader("📷 Unggah Citra Daun")
         uploaded_file = st.file_uploader(
-            "Pilih file foto daun (JPG, PNG, WEBP) dengan maksimal ukuran file 6 MB.",
+            "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB.",
             type=["jpg", "jpeg", "png", "webp"],
             help="Maksimal ukuran file 6 MB."
         )
