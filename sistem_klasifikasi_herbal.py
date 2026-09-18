@@ -724,7 +724,7 @@ elif st.session_state.page == "result":
                     <span style="font-size:16px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Ilmiah:</span>
                     <div class="scientific-name">{pred_name}</div>
                     <span style="font-size:16px; font-weight:700; color:#64748b; text-transform:uppercase;">Nama Umum:</span>
-                    <ul style="font-size:22px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
+                    <ul style="font-size:20px; color:#1e293b; margin-top:6px; padding-left:20px; font-weight: 500; line-height: 1.7;">
                         {nama_umum_list}
                     </ul>
                 </div>
