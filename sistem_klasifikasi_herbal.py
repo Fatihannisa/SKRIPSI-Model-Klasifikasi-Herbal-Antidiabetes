@@ -646,8 +646,7 @@ if st.session_state.page == "upload":
         uploaded_file = st.file_uploader(
             "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB",
             type=["jpg", "jpeg", "png", "webp"],
-            help="Maksimal ukuran file 6 MB.",
-            label_visibility="collapsed"
+            help="Maksimal ukuran file 6 MB."
         )
 
         if uploaded_file is not None:
