@@ -635,12 +635,14 @@ if st.session_state.page == "upload":
 
     with col1:
         st.subheader("📷 Unggah Citra Daun")
-        st.markdown(
-            "<p style='font-size: 16px; margin-bottom: 8px; font-weight: 500;'>"
-            "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB"
-            "</p>", 
-            unsafe_allow_html=True
-        )
+        st.markdown("""
+            <style>
+            [data-testid="stFileUploader"] label {
+                font-size: 16px !important;
+                font-weight: 500 !important;
+            }
+            </style>
+        """, unsafe_allow_html=True)
         uploaded_file = st.file_uploader(
             "Pilih file foto daun (JPG, PNG, WEBP) dengan ukuran file maksimal 6 MB",
             type=["jpg", "jpeg", "png", "webp"],
