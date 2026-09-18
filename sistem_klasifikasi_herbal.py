@@ -643,14 +643,6 @@ if st.session_state.page == "upload":
 
         if uploaded_file is not None:
             file_size_mb = uploaded_file.size / (1024 * 1024)
-
-            if file_size_mb > 6.0:
-                st.error(
-                    f"⚠️ Ukuran file terlalu besar ({file_size_mb:.2f} MB). "
-                    "Harap unggah foto dengan ukuran maksimal 6 MB agar proses prediksi berjalan lancar."
-                )
-                st.stop()
-
             image = Image.open(uploaded_file)
             st.image(image, caption=f"Preview Gambar yang Diunggah ({file_size_mb:.2f} MB)", width=340)
 
