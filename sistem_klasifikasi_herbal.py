@@ -623,7 +623,7 @@ if st.session_state.page == "upload":
             <h1 style="font-family:'Playfair Display', serif; font-size: 34px; font-weight: 700; margin-top: 2px; margin-bottom: 12px; color: #f0fdf4;">
                 Sistem Identifikasi Daun Herbal Antidiabetes
             </h1>
-            <p style="font-size: 18px; line-height: 1.7; color: #e2e8f0; margin: 0; max-width: 900px;">
+            <p style="font-size: 17px; line-height: 1.7; color: #e2e8f0; margin: 0; max-width: 900px;">
                 DiaHerb dikembangkan untuk membantu mengidentifikasi spesies tanaman herbal antidiabetes berdasarkan citra daun. 
                 Dengan bantuan kecerdasan buatan berbasis <i>Deep Learning</i>, sistem menggunakan model <b>Dual-Branch</b> untuk menganalisis karakteristik tulang daun melalui model <i>LeafNet</i> serta karakteristik visual daun melalui model <i>DenseNet201</i>. 
                 Hasil analisis kedua karakteristik tersebut kemudian digunakan untuk menentukan spesies tanaman yang paling sesuai.
